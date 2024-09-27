@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ERSTE SCHRITTE MIT BRACKETS</title>
+        <meta name="description" content="Ein interaktiver Wegweiser für die ersten Schritte mit Brackets.">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body style="background-color: aqua">
+        
+        <div id="Überschrift">
+        <h1 style="color: darkorange">Auf der Jagd nach dem Legendären Star drop</h1>
+        <button style="background-color: dodgerblue" onclick="aufgabe1()">Los</button>
+        </div>
+        
+        <div id="Aufgabe1" style="display: none">
+        <p style="color:blue">findet den Standort wo dieses Foto gemacht wurde,Schreibe den Namen des Spielgerät in die Zeile ein.</p>
+   
+        <img src="Augabe%201.jpeg" width="400px">
+        <button onclick="aufgabe2()" style="background-color: greenyellow">geschafft</button>
+             <button style="background-color: firebrick" onclick="tipp1()">Tipp:</button>
+        </div>
+        
+        <div id="tipp1" style="display: none">
+        <p>Dort kann man Klettern</p>
+        </div>
+        
+      <div id="aufgabe2" style="display: none">
+        <p>Aufgabe2:</p>       
+    <h1>Das Klettergerüst</h1>
+      <p>laufe in 20 sekunden um das klettergerüst</p>
+      <p>geschafft.</p>
+       <img src="Aufgabe%202.jpeg" width=450px>
+      <button onclick="aufgabe3()">ja</button> <button>nein</button>
+        </div>
+        
+             <div id="aufgabe3" style="display: none"> 
+        <h1> Aufgabe3</h1>
+    
+                  <img src="aufgabe3.jpeg" width=450px>
+
+                 
+                  <p> Kletter in 10 Sekunden hoch und runter
+         an der Kletterwand</p>
+    <div>   kletter in 10 Sekunden über den Kletterwürfel      </div>
+        
+                 <button onclick="Ende()"> ja </button>         <button> nein </button> 
+        
+           
+        </div>
+        
+        <div id="Ende" style="display: none">
+        <h1>Herzlichen Glückwunsch</h1>
+        </div>
+
+        
+        <script>
+        function aufgabe1(){
+            document.getElementById("Aufgabe1").style.display="block";
+        }
+            
+        function tipp1(){
+            document.getElementById("tipp1").style.display="block";
+        }
+            
+        function aufgabe2(){
+            document.getElementById("aufgabe2").style.display="block";
+        }
+        
+           function aufgabe3(){
+            document.getElementById("aufgabe3").style.display="block";
+        }
+            
+            function Ende(){
+                   document.getElementById("Ende").style.display="block";
+            }
+        
+        </script>
+ </body>
+</html>
